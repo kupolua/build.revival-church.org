@@ -177,8 +177,8 @@ a {
   margin: 64px auto 32px;
 }
 
-.footer-content .site-logo {
-  height: 25px !important;
+.footer-content .site-logo a {
+  font-size: 34px !important;
 }
 
 .footer-content .social {
