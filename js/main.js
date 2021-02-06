@@ -4,6 +4,17 @@
  	once: true
  });
 
+let videoButton = document.querySelector(".play");
+let videoOffButton = document.querySelector(".off-button");
+
+videoButton.addEventListener("click", () => {
+	document.body.classList.add("show-video")
+})
+
+videoOffButton.addEventListener("click", () => {
+ document.body.classList.remove("show-video")
+})
+
 
 // $(window).load(function() {
 	

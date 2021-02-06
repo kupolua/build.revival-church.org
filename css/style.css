@@ -46,6 +46,98 @@ a:hover {
   transition: .5s;
 }
 
+.show-video .video {
+  opacity: 1;
+  transition: .5s;
+  pointer-events: unset;
+}
+
+.show-video .off-button {
+  display: block;
+}
+
+.off-button {
+  display: none;
+  position: fixed;
+  cursor: pointer;
+  right: 58px;
+  top: 22px;
+  width: 60px;
+  height: 54px;
+  transform: rotate(0);
+  transition: 0.5s;
+}
+
+.site-blocks-cover {
+  position: relative;
+}
+
+.play img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 80px;
+  height: 80px;
+  opacity: 1;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.play img:hover {
+  opacity: 0.5;
+  transition: .5s;
+}
+
+.off-button span {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 55px;
+  width: 1px;
+  background-color: white;
+}
+
+.off-button span:first-child {
+   transform: rotate(45deg);
+}
+
+.off-button span:last-child {
+   transform: rotate(-45deg);
+}
+
+.off-button:hover {
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+
+@media (max-width: 1024px) {
+  .off-button:hover {
+    transform: rotate(0);
+    transition: 0.5s;
+  }
+}
+
+.video {
+  opacity: 0;
+  transition: .5s;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 100;
+  pointer-events: none;
+}
+
+.video iframe {
+  position: fixed;
+  width: 80%;
+  height: 90%;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
 .social {
   margin-right: auto;
   padding-left: 15px;
