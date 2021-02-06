@@ -299,6 +299,11 @@ a:hover {
 }
 
 @media (max-width: 480px) {
+  .off-button {
+    right: 16px;
+    top: 16px;
+  }
+
   .video iframe {
     position: fixed;
     width: 98%;
