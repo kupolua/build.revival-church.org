@@ -1,3 +1,9 @@
+.text {
+	width: calc(100% - 256px);
+	margin-right: 128px;
+	margin-left: 128px;
+}
+
 .site-navbar-wrap {
 	position: absolute;
 	z-index: 99;

@@ -104,7 +104,7 @@ sup {
   top: -.5em; }
 
 a {
-  color: #ff5733;
+  color: rgb(160, 160, 160);
   text-decoration: none;
   background-color: transparent; }
   a:hover {
